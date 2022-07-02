@@ -1,0 +1,230 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    
+}
+.container-main
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.nav-bar
+{
+    background-color: black;
+    display: flex;
+    color: white;
+    height: 5rem;
+    padding: 1.5rem;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    width:auto;
+}
+
+.nav-elements
+{
+    font-family: cursive;
+}
+.nav-elements:hover
+{
+    color:#3ec3ec;
+}
+
+.header
+{
+    color: white;
+    font-size: 32px;
+    font-family: cursive;
+    
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(223, 214, 214);
+    width:max-content;
+color: black;
+width: auto;
+}
+
+.quiz-body
+{
+    width:max-content;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 2.5rem;
+    background:linear-gradient(45deg,rgba(0,0,0, 0.8),rgba(0,0,0,0.5),rgba(0,0,0,0.6));
+    border:none;
+    border-radius: 1.5rem;
+}
+
+.question
+{
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 2rem;
+    
+    
+
+}
+
+ul{
+    width:fit-content;
+    font-size: 18px;
+    word-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+li{
+    list-style-type: none;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    width: fit-content;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    
+    
+    
+}
+
+.submit
+{
+    width: 6rem;
+    height: 2.6rem;
+    background-color: rgb(18, 46, 94);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    border: 2px solid white;
+    padding: 0 0.5rem;
+
+}
+
+.submit:hover
+{
+   
+    background-color: transparent;
+    border: 1.5px solid black;
+}
+
+.next
+{
+    background-color: rgb(48, 229, 72);
+    color: white;
+}
+
+.score
+{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+/* Media Query for max-width:600px   */
+
+
+@media screen and (max-width:600px)
+{
+
+    .container-main
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+   .quiz-body
+   {
+    width: 20rem;
+   }
+
+   .nav-bar
+   {
+    font-size: 1rem;
+
+   }
+
+   li , label
+   {
+    font-size: 1rem;
+
+   }
+}
+
+
+/* media querry for  max-width:350px*/
+
+@media screen and (max-width:350px)
+{
+   
+    .container-main
+    {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+   .quiz-body
+   {
+    width: 15rem;
+   }
+
+   .nav-bar
+   {
+    font-size: 0.7rem;
+    
+
+   }
+
+   li , label
+   {
+    font-size: 1rem;
+    height: 1rem;
+
+   }
+}
+
+
+
+
+
+/* Use below code to find css error */
+
+
+/*
+(function (debug) {
+    var w = debug.documentElement.offsetWidth,
+        t = debug.createTreeWalker(debug.body, NodeFilter.SHOW_ELEMENT),
+        b;
+    while (t.nextNode()) {
+        b = t.currentNode.getBoundingClientRect();
+        if (b.right > w || b.left < 0) {
+            t.currentNode.style.setProperty('outline', '1px dotted red', 'important');
+            console.log(t.currentNode);
+        }
+    };
+}(document)); 
+
+*/
+
