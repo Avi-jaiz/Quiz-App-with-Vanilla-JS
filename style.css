@@ -141,6 +141,16 @@ li{
     font-weight: 400;
 }
 
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: black;
+    color: white;
+}
+
 
 /* Media Query for max-width:600px   */
 
